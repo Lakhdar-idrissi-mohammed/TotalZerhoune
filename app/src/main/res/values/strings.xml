@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="total">TOTAL</string>
+    <string name="pocket">Pocket</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="button">Button</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="vidange">Vidange</string>
+    <string name="boutique">Boutique</string>
+    <string name="cafeteria">Cafeteria</string>
+    <string name="lavage">Lavage</string>
+    <string name="Button" />
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="Send" />
+    <string name="send">Send</string>
+    <string-array name="LITRE">
+        <item>1L</item>
+        <item>0.5L</item>
+        <item>0.33</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
