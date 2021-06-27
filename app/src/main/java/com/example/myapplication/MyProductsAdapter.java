@@ -61,11 +61,8 @@ public class MyProductsAdapter extends RecyclerView.Adapter<MyProductsAdapter.Vi
 
                 String Name = myProductsDataList.getProductName().toString();
                 String Elegant = String.valueOf(newValue);
-                myProductsData2= new MyProductsData(Name,Elegant);
+
                 FirebaseApp.initializeApp(context);
-                reference = FirebaseDatabase.getInstance().getReference();
-                reference.child("Command").child(Name).setValue(myProductsData2);
-                /*FirebaseApp.initializeApp(context);
                 reference2 = FirebaseDatabase.getInstance().getReference().child("Stock");
                reference2.addValueEventListener(new ValueEventListener() {
                    @Override
@@ -73,11 +70,10 @@ public class MyProductsAdapter extends RecyclerView.Adapter<MyProductsAdapter.Vi
                       for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                           Information info = snapshot.getValue(Information.class);
                           int txt = info.getStock();
-                          if (Name==info.getProductName()){
                               myProductsData2= new MyProductsData(Name,Elegant);
                               FirebaseApp.initializeApp(context);
                               reference = FirebaseDatabase.getInstance().getReference();
-                              reference.child("Command").child(Name).setValue(myProductsData2);}
+                              reference.child("Command").child(Name).setValue(myProductsData2);
                       }
                    }
 
@@ -86,7 +82,7 @@ public class MyProductsAdapter extends RecyclerView.Adapter<MyProductsAdapter.Vi
 
                    }
                });
-                 */
+
 
 
             }

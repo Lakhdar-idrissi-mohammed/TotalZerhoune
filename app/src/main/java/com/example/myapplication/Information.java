@@ -4,12 +4,12 @@ public class Information {
     String ProductName;
     int stock;
 
+    public Information() {
+    }
+
     public Information(String productName, int stock) {
         ProductName = productName;
         this.stock = stock;
-    }
-
-    public Information() {
     }
 
     public String getProductName() {
